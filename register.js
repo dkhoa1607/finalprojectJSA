@@ -29,7 +29,8 @@ form.onsubmit = function (event) {
     confirmpassword.focus();
     return;
   }
-  window.location.href = "index.html";
+
+  window.location.href = "login.html";
 };
 function validateEmail(email) {
   let check = email.indexOf("@");

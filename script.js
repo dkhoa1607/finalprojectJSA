@@ -28,3 +28,43 @@ function slideShowcase(){
 }
 
 window.addEventListener('resize', slideShowcase);
+
+// sessionStorage
+let navbarNav = document.getElementById('navbar-nav')
+if(sessionStorage.getItem('user')!=null) {
+    let navList = ` <li class = "nav-item">
+    <a href = "./index.html" class = "nav-link">Home</a>
+  </li>
+  <li class = "nav-item">
+    <a href = "#" class = "nav-link">About</a>
+  </li>
+  <li class = "nav-item">
+    <a href = "#" class = "nav-link">Contact</a>
+  </li>
+  <li class = "nav-item">
+  <button onclick="logOut()" id="logout-btn">Log out</button>
+  </li>`
+    navbarNav.innerHTML = navList
+
+}else{
+    let navList = `<li class = "nav-item">
+    <a href = "./index.html" class = "nav-link">Home</a>
+  </li>
+  <li class = "nav-item">
+    <a href = "#" class = "nav-link">About</a>
+  </li>
+  <li class = "nav-item">
+    <a href = "./login.html" class = "nav-link">Login</a>
+  </li>
+  <li class = "nav-item">
+    <a href = "./register.html" class = "nav-link">Sign up</a>
+  </li>
+  <li class = "nav-item">
+    <a href = "#" class = "nav-link">Contact</a>
+  </li>`
+  navbarNav.innerHTML = navList
+}
+function logOut(){
+    sessionStorage.removeItem('user')
+    window.location.href = "/"
+}

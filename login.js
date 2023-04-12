@@ -25,6 +25,7 @@ form.onsubmit = function (event) {
     Email.focus()
     return;
   }
+  sessionStorage.setItem('user', userEmail)
   window.location.href ='index.html'
 };
 function validateEmail(email) {

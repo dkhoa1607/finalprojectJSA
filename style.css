@@ -65,7 +65,7 @@ body{
     border: none;
     outline: 0;
 }
-.navbar-nav{
+#navbar-nav{
     display: flex;
     flex-direction: column;
 }
@@ -175,3 +175,16 @@ body{
     text-decoration: none;
     color: white;
 }
+
+#logout-btn {
+    all: unset;
+    cursor: pointer;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 1px;
+    transition: color 0.5s ease;
+}
+#logout-btn:hover {
+        color: #c7c7c7;
+}   
