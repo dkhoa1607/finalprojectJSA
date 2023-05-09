@@ -39,7 +39,7 @@ if(sessionStorage.getItem('user')!=null) {
     <a href = "./foodrecipe.html" class = "nav-link">Recipe</a>
   </li>
   <li class = "nav-item">
-    <a href = "#" class = "nav-link">Contact</a>
+    <a href = "./contact.html" class = "nav-link">Contact</a>
   </li>
   <li class = "nav-item">
   <button onclick="logOut()" id="logout-btn">Log out</button>
@@ -57,7 +57,7 @@ if(sessionStorage.getItem('user')!=null) {
     <a href = "./register.html" class = "nav-link">Sign up</a>
   </li>
   <li class = "nav-item">
-    <a href = "#" class = "nav-link">Contact</a>
+    <a href = "./contact.html" class = "nav-link">Contact</a>
   </li>`
   navbarNav.innerHTML = navList
 }
