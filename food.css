@@ -299,3 +299,25 @@ body{
         grid-template-columns: repeat(3, 1fr);
     }
 }
+
+.navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1.4rem 2rem;
+    z-index: 999;
+}
+.navbar-brand{
+    color: black;
+    font-weight: 800;
+    font-size: 2rem;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.5;
+}
+.brand-and-toggler{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

@@ -1,4 +1,4 @@
-// navigation bar 
+
 const navShowBtn = document.querySelector('.nav-show-btn');
 const navHideBtn = document.querySelector('.nav-hide-btn');
 const navMenu = document.querySelector('.navbar-collapse');
@@ -11,7 +11,7 @@ navHideBtn.addEventListener('click', () => {
     navMenu.classList.remove('showNav');
 });
 
-// showcase bg slider 
+
 const dottedBtns = document.querySelectorAll('.dotted-btns span');
 let slideCount = 0;
 
@@ -36,7 +36,7 @@ if(sessionStorage.getItem('user')!=null) {
     <a href = "./index.html" class = "nav-link">Home</a>
   </li>
   <li class = "nav-item">
-    <a href = "#" class = "nav-link">About</a>
+    <a href = "./foodrecipe.html" class = "nav-link">Recipe</a>
   </li>
   <li class = "nav-item">
     <a href = "#" class = "nav-link">Contact</a>
@@ -49,9 +49,6 @@ if(sessionStorage.getItem('user')!=null) {
 }else{
     let navList = `<li class = "nav-item">
     <a href = "./index.html" class = "nav-link">Home</a>
-  </li>
-  <li class = "nav-item">
-    <a href = "#" class = "nav-link">About</a>
   </li>
   <li class = "nav-item">
     <a href = "./login.html" class = "nav-link">Login</a>
