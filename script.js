@@ -63,5 +63,5 @@ if(sessionStorage.getItem('user')!=null) {
 }
 function logOut(){
     sessionStorage.removeItem('user')
-    window.location.href = "/"
+    window.location.href = "./index.html"
 }
